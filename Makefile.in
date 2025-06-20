@@ -1,0 +1,6 @@
+MODULE    = wintypes_shim.dll
+IMPORTLIB = wintypes
+IMPORTS   = combase
+
+SOURCES = \
+	main.c
