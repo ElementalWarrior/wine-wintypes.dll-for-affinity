@@ -8,3 +8,34 @@ The wine devs were not interested in accepting patches upstream it seems for a t
 
 I haven't tested thoroughly, and I've only checked that photo.exe starts.
 
+# Compiling
+
+Clone this repo to the wine/dlls/ directory. Run compile.sh
+
+# Usage
+
+Move wintypes_shim.dll.so to:
+- Affinity/Photo 2/
+- Affinity/Designer 2/
+- Affinity/Publisher 2/
+
+And rename it to wintypes.dll
+
+# Usage with winetricks
+
+I've created a winetricks pr to install this directory to the affinity directories.
+
+Until that is merged, you can clone https://github.com/ElementalWarrior/winetricks/tree/add-affinity and run:
+
+```sh
+./src/winetricks affinity
+```
+
+If it gets accepted, you can just run:
+
+```sh
+winetricks affinity
+```
+
+Don't forget to provide your wineprefix if you are using a non-standard setup.
+
