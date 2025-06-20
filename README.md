@@ -25,6 +25,8 @@ And rename it to wintypes.dll
 
 I've created a winetricks pr to install this directory to the affinity directories.
 
+https://github.com/Winetricks/winetricks/pull/2395
+
 Until that is merged, you can clone https://github.com/ElementalWarrior/winetricks/tree/add-affinity and run:
 
 ```sh
